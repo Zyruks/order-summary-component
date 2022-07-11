@@ -10,11 +10,14 @@
 
   background-color: hsl(0deg, 0%, 100%);
   padding-block-end: rem(16);
-  max-inline-size: rem(360);
+  min-inline-size: rem(360);
+  max-inline-size: rem(410);
 }
 
 .img-container img {
   inline-size: 100%;
+
+  animation: key-top-to-bottom 400ms ease-in-out forwards;
 }
 
 .card-text {
@@ -25,6 +28,8 @@
   gap: rem(20);
   align-items: center;
   padding: rem(16);
+
+  animation: key-left-to-right 400ms ease-in-out forwards;
 }
 
 .card__description {
@@ -36,6 +41,8 @@
   flex-direction: column;
   inline-size: 100%;
   gap: rem(22);
+
+  animation: key-left-to-right 800ms ease-in-out forwards;
 }
 
 .plan {
@@ -110,16 +117,16 @@
 }
 
 .card__proceed-btn {
-  margin-block-start: rem(16);
-
   padding: rem(14) rem(20);
   border: none;
   border-radius: rem(16);
 
   background-color: var(--bright-blue);
-  inline-size: 100%;
-
   box-shadow: 0 rem(25) rem(32) rem(5) rgba(56, 41, 224, 20%);
+
+  animation: key-left-to-right 1.4s ease-in-out forwards;
+  margin-block-start: rem(16);
+  inline-size: 100%;
 
   &:hover {
     background-color: var(--desaturated-blue);

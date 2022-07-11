@@ -1,7 +1,7 @@
 @use "../abstract/" as *;
 
 .dropdown {
-  animation: key-dropdown 500ms ease-in-out, forwards;
+  animation: key-dropdown 500ms ease-in-out forwards;
 }
 
 @keyframes key-dropdown {
@@ -17,7 +17,7 @@
 }
 
 .vanish {
-  animation: key-vanish 500ms ease-in-out, forwards;
+  animation: key-vanish 500ms ease-in-out forwards;
 }
 @keyframes key-vanish {
   0% {
@@ -32,7 +32,7 @@
 }
 
 .scale {
-  animation: key-bubble 200ms ease-in, forwards;
+  animation: key-bubble 200ms ease-in forwards;
 }
 
 @keyframes key-bubble {
@@ -42,5 +42,85 @@
 
   100% {
     padding: rem(120) rem(60);
+  }
+}
+
+@keyframes key-moving {
+  0% {
+    inset-block-end: -5%;
+    inset-inline-start: -15%;
+
+    transform: scale(4);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    inset-block-end: 100%;
+    inset-inline-start: 100%;
+
+    transform: scale(1);
+  }
+}
+
+@keyframes key-bubble-moving {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.05);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes key-padding {
+  0% {
+    padding: rem(120) rem(60);
+  }
+
+  50% {
+    padding: rem(100) rem(40);
+  }
+
+  100% {
+    padding: rem(120) rem(60);
+  }
+}
+
+@keyframes key-left-to-right {
+  0% {
+    transform: translateX(rem(-30));
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateX(rem(0));
+    opacity: 100%;
+  }
+}
+
+@keyframes key-top-to-bottom {
+  0% {
+    transform: translateY(rem(-30));
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(rem(0));
+    opacity: 100%;
   }
 }

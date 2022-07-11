@@ -15,10 +15,23 @@
   padding: rem(120) rem(60);
   border-radius: 100%;
 
-  color: white;
+  color: hsl(0deg, 0%, 100%);
   text-align: center;
 
   background-color: var(--bright-blue);
+
+  animation: key-padding 4s ease-in-out infinite;
+}
+
+.title-circle {
+  position: absolute;
+
+  padding: rem(120) rem(120);
+  border-radius: 100%;
+
+  background-color: var(--bright-blue);
+
+  animation: key-moving 1s ease forwards;
 }
 
 .bubble {
@@ -30,11 +43,13 @@
 }
 
 .bubble-1 {
+  padding: rem(80);
+
+  animation: key-bubble-moving 5s ease-in-out infinite;
+  animation-delay: 400ms;
   inset-block-start: 2%;
 
   inset-inline-start: 3%;
-
-  padding: rem(80);
 }
 
 .bubble-2 {
@@ -43,6 +58,9 @@
   inset-inline-start: 50%;
 
   padding: rem(120);
+
+  animation: key-bubble-moving 3s ease-in-out infinite;
+  animation-delay: 400ms;
 }
 
 .bubble-3 {
@@ -51,6 +69,9 @@
   inset-inline-start: 90%;
 
   padding: rem(80);
+
+  animation: key-bubble-moving 2s ease-in-out infinite;
+  animation-delay: 400ms;
 }
 
 .bubble-4 {
@@ -59,6 +80,9 @@
   inset-inline-start: 65%;
 
   padding: rem(180);
+
+  animation: key-bubble-moving 7s ease-in-out infinite;
+  animation-delay: 400ms;
 }
 
 .bubble-5 {
@@ -67,4 +91,7 @@
   inset-inline-start: -30%;
 
   padding: rem(100);
+
+  animation: key-bubble-moving 4s ease-in-out infinite;
+  animation-delay: 400ms;
 }

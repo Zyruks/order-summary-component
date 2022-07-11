@@ -22,7 +22,6 @@ body {
   justify-content: center;
 
   padding: 0;
-  overflow: hidden;
 
   background-color: var(--pale-blue);
   block-size: 100vh;
@@ -58,6 +57,5 @@ a {
 }
 
 .attribution {
-  position: absolute;
-  inset-block-end: 3%;
+  margin-block-start: rem(50);
 }

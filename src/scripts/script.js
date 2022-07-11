@@ -70,5 +70,4 @@ YearlyText.addEventListener("click", () => {
 proceedBtn.addEventListener("click", () => {
   primaryCard.classList.add("hidden");
   thanksCard.classList.remove("hidden");
-  title.classList.add("scale");
 });
