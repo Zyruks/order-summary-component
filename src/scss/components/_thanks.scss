@@ -1,0 +1,70 @@
+@use "../abstract/" as *;
+
+.thanks {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  block-size: rem(720);
+  inline-size: rem(360);
+}
+
+.thanks h1 {
+  padding: rem(120) rem(60);
+  border-radius: 100%;
+
+  color: white;
+  text-align: center;
+
+  background-color: var(--bright-blue);
+}
+
+.bubble {
+  position: absolute;
+
+  border-radius: 100%;
+
+  background-color: var(--bright-blue);
+}
+
+.bubble-1 {
+  inset-block-start: 2%;
+
+  inset-inline-start: 3%;
+
+  padding: rem(80);
+}
+
+.bubble-2 {
+  inset-block-start: 80%;
+
+  inset-inline-start: 50%;
+
+  padding: rem(120);
+}
+
+.bubble-3 {
+  inset-block-start: 50%;
+
+  inset-inline-start: 90%;
+
+  padding: rem(80);
+}
+
+.bubble-4 {
+  inset-block-start: -15%;
+
+  inset-inline-start: 65%;
+
+  padding: rem(180);
+}
+
+.bubble-5 {
+  inset-block-start: 70%;
+
+  inset-inline-start: -30%;
+
+  padding: rem(100);
+}

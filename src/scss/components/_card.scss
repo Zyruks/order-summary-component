@@ -1,1 +1,140 @@
 @use "../abstract/" as *;
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: rem(16);
+  border-radius: rem(20);
+  overflow: hidden;
+
+  background-color: hsl(0deg, 0%, 100%);
+  padding-block-end: rem(16);
+  max-inline-size: rem(360);
+}
+
+.img-container img {
+  inline-size: 100%;
+}
+
+.card-text {
+  margin-block-start: rem(20);
+
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  align-items: center;
+  padding: rem(16);
+}
+
+.card__description {
+  inline-size: 90%;
+}
+
+.plan-wrapper {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  gap: rem(22);
+}
+
+.plan {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: rem(22);
+  padding: rem(16);
+  border-radius: rem(10);
+
+  background-color: var(--very-pale-blue);
+  inline-size: 100%;
+
+  &:first-child {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 2;
+  }
+}
+
+.plan-container {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+
+  gap: rem(14);
+  align-items: center;
+  justify-content: flex-start;
+
+  border-radius: rem(10);
+
+  inline-size: 100%;
+}
+
+.plan-container--active {
+  display: flex;
+}
+
+.plan__text {
+  display: flex;
+  flex-direction: column;
+  gap: rem(14);
+  block-size: 100%;
+}
+
+.plan-text__title {
+  margin-block-end: rem(6);
+
+  cursor: pointer;
+
+  &:hover {
+    color: var(--bright-blue);
+  }
+}
+
+.plan__change {
+  position: absolute;
+  inset-inline-end: 5%;
+
+  z-index: 2;
+
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.card__proceed-btn {
+  margin-block-start: rem(16);
+
+  padding: rem(14) rem(20);
+  border: none;
+  border-radius: rem(16);
+
+  background-color: var(--bright-blue);
+  inline-size: 100%;
+
+  box-shadow: 0 rem(25) rem(32) rem(5) rgba(56, 41, 224, 20%);
+
+  &:hover {
+    background-color: var(--desaturated-blue);
+  }
+}
+
+.card__cancel-btn {
+  padding: rem(20);
+  border: none;
+  border-radius: rem(16);
+
+  background-color: rgba(0, 0, 0, 0%);
+  inline-size: 100%;
+
+  &:hover {
+    color: var(--dark-blue);
+  }
+}

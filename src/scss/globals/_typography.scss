@@ -16,6 +16,14 @@ h3 {
   line-height: 1.1;
 }
 
+h1,
+h2,
+p,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 a,
 a:visited,
 a:active {
@@ -30,6 +38,52 @@ h4 {
 /* ******************* *\
  ? #card typography
 \* ******************* */
+.card__title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: rem(28);
+}
+
+.card__description {
+  color: var(--desaturated-blue);
+  font-size: rem(16);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.plan-text__title {
+  color: var(--dark-blue);
+  font-weight: 900;
+  font-size: rem(18);
+}
+
+.plan-text__price {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.plan__change {
+  color: var(--bright-blue);
+  font-weight: 900;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+  }
+}
+
+.card__proceed-btn {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 900;
+  font-size: rem(18);
+}
+
+.card__cancel-btn {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  font-size: rem(18);
+}
 
 /* ******************* *\
  ? #card typography end

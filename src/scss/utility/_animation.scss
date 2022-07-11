@@ -1,1 +1,46 @@
 @use "../abstract/" as *;
+
+.dropdown {
+  animation: key-dropdown 500ms ease-in-out, forwards;
+}
+
+@keyframes key-dropdown {
+  0% {
+    transform: translateY(rem(-30));
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(rem(0));
+    opacity: 100%;
+  }
+}
+
+.vanish {
+  animation: key-vanish 500ms ease-in-out, forwards;
+}
+@keyframes key-vanish {
+  0% {
+    transform: translateY(rem(0));
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateY(rem(30));
+    opacity: 0%;
+  }
+}
+
+.scale {
+  animation: key-bubble 200ms ease-in, forwards;
+}
+
+@keyframes key-bubble {
+  0% {
+    padding: rem(1000);
+  }
+
+  100% {
+    padding: rem(120) rem(60);
+  }
+}

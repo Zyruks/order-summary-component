@@ -24,9 +24,19 @@ body {
   padding: 0;
   overflow: hidden;
 
-  background-color: var(--main-bg);
-
+  background-color: var(--pale-blue);
   block-size: 100vh;
+  background-image: url("../../assets/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+
+  background-size: 100% rem(500);
+
+  @include breakpoint(large) {
+    background-image: url("../../assets/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+
+    background-size: 100% rem(400);
+  }
 }
 
 ul {
@@ -39,10 +49,10 @@ li {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--bright-blue);
   text-decoration: none;
 
-  &:visited {
-    color: var(--primary-color);
+  &:hover {
+    color: var(--desaturated-blue);
   }
 }
